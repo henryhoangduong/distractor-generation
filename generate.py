@@ -217,7 +217,7 @@ def evaluate(args):
 
     def ndcg_at_k(preds, targets, k: int = 1):
         def dcg_at_k(r, k):
-            r = np.asfarray(r)[:k]
+            r = np.asarray(r)[:k]
             if r.size:
                 return r[0] + np.sum(r[1:] / np.log2(np.arange(2, r.size + 1)))
             return 0.0
