@@ -142,7 +142,7 @@ class DistractorGenerationPipeline(FillMaskPipeline):
             preprocess_params["dispersion"] = dispersion
 
         # Put seed in forward_params which will be later popped by run_single()
-        forward_params["seed"] = seed
+        # forward_params["seed"] = seed
 
         if targets is not None:
             target_ids = self.get_target_ids(targets, top_k)
