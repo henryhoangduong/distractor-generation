@@ -80,7 +80,6 @@ class DistractorGenerationPipeline(FillMaskPipeline):
         framework: Optional[str] = None,
         task: str = "",
         args_parser: ArgumentHandler = None,
-        device: int = -1,
         binary_output: bool = False,
         **kwargs,
     ):
@@ -95,7 +94,6 @@ class DistractorGenerationPipeline(FillMaskPipeline):
             framework,
             task,
             args_parser,
-            device,
             binary_output,
             **kwargs,
         )
